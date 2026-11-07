@@ -2,14 +2,138 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Waspit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waspit | Inicio</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; background: #121212; color: white; }
-        h1 { color: #00d26a; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #0b0f19;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(0, 210, 106, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%);
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00d26a, #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 20px rgba(0, 210, 106, 0.3);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        p.bio {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 210, 106, 0.1);
+            color: #00d26a;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #00d26a;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00d26a;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
     </style>
 </head>
 <body>
-    <h1>¡Dominio waspit.lat activo! 🚀</h1>
-    <p>Mi primera página alojada en GitHub Pages.</p>
+
+    <div class="card">
+        <div class="avatar">⚡</div>
+        <h1>Waspit</h1>
+        <p class="bio">Desarrollo, proyectos digitales y experimentación web.</p>
+        
+        <div class="status">
+            <span class="dot"></span> En construcción
+        </div>
+
+        <div class="btn-group">
+            <a href="https://github.com/petronix667-a11y" class="btn" target="_blank">Ver GitHub</a>
+        </div>
+
+        <footer>
+            waspit.lat &bull; 2026
+        </footer>
+    </div>
+
 </body>
 </html>
