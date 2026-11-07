@@ -38,17 +38,25 @@
         }
 
         .avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #00d26a, #3b82f6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            margin: 0 auto 20px;
-            box-shadow: 0 0 20px rgba(0, 210, 106, 0.3);
-        }
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para que resalte el icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 20px rgba(88, 101, 242, 0.3); /* Brillo azul estilo Discord */
+    overflow: hidden;
+    padding: 18px; /* Controla el tamaño de la imagen dentro del círculo */
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+        
 
         h1 {
             font-size: 1.8rem;
@@ -118,7 +126,9 @@
 <body>
 
     <div class="card">
-        <div class="avatar">⚡</div>
+        <div class="avatar">
+    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
+</div>
         <h1>Waspit</h1>
         <p class="bio">En el siguiente botón encontraran el servidor de Discord oficial de ⬇️iOS_Vault⬇️.</p>
         
