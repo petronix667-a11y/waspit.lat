@@ -26,38 +26,45 @@
             padding: 20px;
         }
 
+        /* Contenedor maestro para que tarjeta y anuncio vayan en columna centrados */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 420px;
+        }
+
         .card {
             background: rgba(17, 24, 39, 0.7);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             padding: 40px 30px;
-            max-width: 420px;
             width: 100%;
             text-align: center;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para que resalte el icono */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    box-shadow: 0 0 20px rgba(88, 101, 242, 0.3); /* Brillo azul estilo Discord */
-    overflow: hidden;
-    padding: 18px; /* Controla el tamaño de la imagen dentro del círculo */
-}
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 20px rgba(88, 101, 242, 0.3);
+            overflow: hidden;
+            padding: 18px;
+        }
 
-.avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
 
         h1 {
             font-size: 1.8rem;
@@ -126,29 +133,34 @@
 </head>
 <body>
 
-    <div class="card">
-        <div class="avatar">
-    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
-</div>
-        <h1>¡Bienvenido!</h1>
-        <p class="bio">En el siguiente botón encontraras el servidor de Discord oficial de ⬇️iOS_Vault⬇️.</p>
-        
-        <div class="status">
-            <span class="dot"></span> En desarrollo!
-        </div>  
-  
-        <div class="btn-group">
-            <a href="https://discord.gg/5cpgHbUxM4" class="btn" target="_blank">Server de Discord</a>
+    <div class="main-container">
+        <!-- Tu Tarjeta Principal -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
+            </div>
+            <h1>¡Bienvenido!</h1>
+            <p class="bio">En el siguiente botón encontraras el servidor de Discord oficial de ⬇️iOS_Vault⬇️.</p>
+            
+            <div class="status">
+                <span class="dot"></span> En desarrollo!
+            </div>
+
+            <div class="btn-group">
+                <a href="https://discord.gg/5cpgHbUxM4" class="btn" target="_blank">Server de Discord</a>
+            </div>
+
+            <footer>
+                waspit.lat &bull; 2026
+            </footer>
         </div>
 
-        <footer>
-            waspit.lat &bull; 2026
-        </footer>
+        <!-- Bloque de publicidad Adsterra ordenado abajo y centrado -->
+        <div style="width: 100%; max-width: 300px; margin-top: 20px; display: flex; justify-content: center; overflow: hidden;">
+            <script async="async" data-cfasync="false" src="https://bicea.org/21/0af9a236e923b94d0e6e481411551df3"></script>
+            <div id="container-0af9a236e923b94d0e6e481411551df3"></div>
+        </div>
     </div>
-<!-- Bloque de publicidad Adsterra fuera de la tarjeta -->
-    <div style="width: 100%; max-width: 300px; margin: 25px auto 0 auto; display: flex; justify-content: center;">
-        <script async="async" data-cfasync="false" src="https://bicea.org/21/0af9a236e923b94d0e6e481411551df3"></script>
-        <div id="container-0af9a236e923b94d0e6e481411551df3"></div>
-    </div>
+
 </body>
 </html>
